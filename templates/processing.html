@@ -1,0 +1,41 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
+      <div class="card border-secondary mb-3 shadow-lg">
+        <div class="card-header" style="text-align: center">Real Video</div>
+        <div class="card-body text-secondary">
+          <img src="{{ video_feed }}" width="100%" />
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <div class="card border-secondary mb-3 shadow-lg">
+        <div class="card-header" style="text-align: center">
+          Derivated Video
+        </div>
+        <div class="card-body text-secondary">
+          <img src="{{ derivative }}" width="100%" />
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <div class="card border-secondary mb-3 shadow-lg">
+        <div class="card-header" style="text-align: center">
+          Detection Video
+        </div>
+        <div class="card-body text-secondary">
+          <img src="{{ output }}" width="100%" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" style="float: right; text-align: right">
+      <a href="{{ result }}" class="btn btn-secondary shadow-lg">
+        Go to Results
+      </a>
+    </div>
+  </div>
+</div>
+<div>{% endblock content %}</div>

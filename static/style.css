@@ -1,0 +1,15 @@
+.background {
+  background-image: url("images/background.jpg");
+  background-repeat: repeat;
+}
+
+.logo {
+  width: 150px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.shadow {
+  border: 1px solid;
+  padding: 10px;
+}

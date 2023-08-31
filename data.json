@@ -1,0 +1,77 @@
+{
+    "1": {
+        "Score": "5",
+        "Distance": "189.16",
+        "Accuracy": "99.75"
+    },
+    "7": {
+        "Score": "6",
+        "Distance": "146.82",
+        "Accuracy": "99.69"
+    },
+    "9": {
+        "Score": "5",
+        "Distance": "182.2",
+        "Accuracy": "87.64"
+    },
+    "10": {
+        "Score": "7",
+        "Distance": "127.02",
+        "Accuracy": "99.81"
+    },
+    "16": {
+        "Score": "7",
+        "Distance": "127.02",
+        "Accuracy": "99.81"
+    },
+    "13": {
+        "Score": "6",
+        "Distance": "155.77",
+        "Accuracy": "99.65"
+    },
+    "19": {
+        "Score": "6",
+        "Distance": "155.77",
+        "Accuracy": "99.66"
+    },
+    "12": {
+        "Score": "5",
+        "Distance": "193.2",
+        "Accuracy": "99.57"
+    },
+    "18": {
+        "Score": "7",
+        "Distance": "124.65",
+        "Accuracy": "99.79"
+    },
+    "11": {
+        "Score": "5",
+        "Distance": "193.2",
+        "Accuracy": "99.57"
+    },
+    "17": {
+        "Score": "7",
+        "Distance": "124.65",
+        "Accuracy": "99.79"
+    },
+    "25": {
+        "Score": "5",
+        "Distance": "193.2",
+        "Accuracy": "99.56"
+    },
+    "22": {
+        "Score": "5",
+        "Distance": "181.22",
+        "Accuracy": "96.88"
+    },
+    "31": {
+        "Score": "7",
+        "Distance": "124.65",
+        "Accuracy": "99.79"
+    },
+    "38": {
+        "Score": "5",
+        "Distance": "195.78",
+        "Accuracy": "99.8"
+    }
+}

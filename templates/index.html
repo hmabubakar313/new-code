@@ -1,0 +1,81 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="card border-secondary mb-3 shadow-lg">
+  <div class="card-header" style="text-align: center">
+    Bullet Hit Point Detection From Video Streaming
+  </div>
+  <div class="card-body text-secondary">
+    <h5 class="card-title">Select a video file and proceed</h5>
+    <form method="POST" enctype="multipart/form-data">
+      <div class="input-group" 
+      {% if message == 'success' %} hidden {% endif %}
+      >
+        <div class="custom-file">
+          <input
+            type="file"
+            name="file"
+            class="custom-file-input"
+            id="fileInput"
+            {% if message == '' %} required {% endif %}
+            
+          />
+          <label class="custom-file-label" for="fileInput">Choose file</label>
+        </div>
+        <div class="input-group-append">
+          <button
+            class="btn btn-primary ms-auto full-btn"
+            value="upload"
+            name="action"
+            type="submit"
+          >
+            Upload
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-10">
+          <div
+            name="alert"
+            role="alert"
+            class="alert {% if message == 'success' %} alert-success {% elif message == 'error' %} alert-danger {% elif message == '' %} collapse {% endif %}"
+            style="
+              height: 40px;
+              margin-bottom: 0px;
+              margin-top: 10px;
+              padding: 5px;
+            "
+          >
+            {% if message == 'success' %} File Uploaded! 
+            {% elif message == 'error' %} File Upload Failed! 
+            {% endif %}
+          </div>
+          <input type="text" value='{{ filename }}' name="filename" class="form-control" hidden>
+        </div>
+        <div class="col-sm-2">
+          <div style="padding-top: 10px; float: right">
+            <button
+              value="next"
+              name="action"
+              type="submit"
+              class="btn {% if message == 'success' %} btn-success ms-auto full-btn" active 
+                         {% elif message == 'error' %} btn-danger ms-auto full-btn" disabled 
+                         {% elif message == '' %} btn-info ms-auto full-btn" disabled {% endif %}       
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<script>
+  document
+    .querySelector(".custom-file-input")
+    .addEventListener("change", function (e) {
+      var fileName = document.getElementById("fileInput").files[0].name;
+      var nextSibling = e.target.nextElementSibling;
+      nextSibling.innerText = fileName;
+    });
+</script>
+<div>{% endblock content %}</div>

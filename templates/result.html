@@ -1,0 +1,30 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card border-secondary mb-3 shadow-lg">
+        <div class="card-header">Results</div>
+        <div class="card-body text-secondary">
+          <table class="table table-bordered">
+            {{ table }}
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-secondary mb-3 shadow-lg">
+        <div class="card-header">Frame</div>
+        <div class="card-body text-secondary">
+          <table class="table table-bordered">
+            <img
+              alt="reult frmae"
+              src="../static/results/result.jpg"
+              style="width: 100%"
+            />
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>{% endblock content %}</div>

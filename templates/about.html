@@ -1,0 +1,91 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card border-secondary mb-3 shadow-lg">
+        <div class="card-header" style="text-align: center">
+          About this Project
+        </div>
+        <div class="card-body text-secondary">
+          <div class="row">
+            <div class="col" style="padding-bottom: 5px">
+              <h5><strong>Introduction:</strong></h5>
+              <p>
+                Shooting Range project is about Automated Calculation of Score
+                board for a Shooting Target, this project is consist of
+                following programming terms and technologies:
+              </p>
+              <br />
+              <h5><strong>Particulars:</strong></h5>
+              <ul>
+                <li>
+                  <strong
+                    ><a
+                      href="https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html"
+                      >OpenCV:
+                    </a></strong
+                  >for image processing
+                </li>
+                <li>
+                  <strong
+                    ><a href="https://arxiv.org/abs/2004.10934"
+                      >YOLOv4 (You Only Look Once):
+                    </a></strong
+                  >for bullet hit point detection on images and video Frames
+                  <img class="diagram" src="../static/images/yolo.jpg" />
+                </li>
+
+                <li>
+                  <strong
+                    ><a
+                      href="https://www.cuemath.com/euclidean-distance-formula/"
+                      >Euclidean-Distance:
+                    </a></strong
+                  >for calculating distnce between center to hitpoint and
+                  scores.
+                </li>
+                <img class="diagram" src="../static/images/ecul.jpeg" />
+                <img class="diagram" src="../static/images/ecul1.jpg" />
+                <li>
+                  <strong
+                    ><a href="https://flask.palletsprojects.com/en/2.0.x/"
+                      >Flask:
+                    </a></strong
+                  >for web-development and back-end logics
+                </li>
+                <li>
+                  <strong>HTML5, CSS3, Javascript, Bootstrap: </strong>for
+                  web-design and front-end logics
+                </li>
+                <li>
+                  <strong
+                    ><a href="https://firebase.google.com/"
+                      >Firebase:
+                    </a></strong
+                  >for user authentications
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="card-body text-secondary">
+          <div class="row">
+            <div class="col" style="padding-bottom: 5px">
+              <h5>
+                <strong>Findings:</strong>
+              </h5>
+              <ul>
+                <li>
+                  Object Detection is a heavy process and requires heavy
+                  processors and even may require GPU for processing.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>{% endblock content %}</div>
